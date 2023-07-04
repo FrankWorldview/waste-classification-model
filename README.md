@@ -15,5 +15,5 @@ https://www.kaggle.com/techsash/waste-classification-data
 * Enjoy!
 
 ## Example results:
-!(1.png)
-!(2.png)
+![result1](1.png)
+![result2](2.png)

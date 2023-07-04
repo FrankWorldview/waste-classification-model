@@ -13,3 +13,7 @@ https://www.kaggle.com/techsash/waste-classification-data
 * Select an image file using the "Choose File" button and then click on "Submit".
 * This should return a classification and probability score.
 * Enjoy!
+
+## Example results:
+(1.png)
+(2.png)

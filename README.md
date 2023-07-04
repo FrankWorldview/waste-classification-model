@@ -1,10 +1,8 @@
 # Machine Learning Waste Classification Model
 
 ## Data source:
-The dataset has over 22,5000 images and is divided into train data (85 %) and test data (15 %).
+The dataset has over 22,500 images and is divided into train data (85 %) and test data (15 %).
 https://www.kaggle.com/techsash/waste-classification-data
-
-**Note:** Within the index.py and main.py files, you may need to change some file paths to match your system path structure. Within the main.py file, change the paths for line 14 and 15. Within the index.py file, change the paths for lines 14 and 41. 
 
 ## Steps:
 * Download all files.

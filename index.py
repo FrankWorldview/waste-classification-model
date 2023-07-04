@@ -6,12 +6,11 @@ from werkzeug.utils import secure_filename
 from main import getPrediction
 import os
 
-
 #################################################
 # Flask Setup
 #################################################
 
-UPLOAD_FOLDER = '/classrepo/HomeWork_out/Project3_ManuelaClone/UCF-PROJECT-03/static/'
+UPLOAD_FOLDER = './static/'
 
 app = Flask(__name__)                    
 app.secret_key = '8662747133'
@@ -38,7 +37,11 @@ def submit_image():
         # Return results predictive data
           if file:
             filename = secure_filename(file.filename)
-            file.save(os.path.join('/classrepo/HomeWork_out/Project3_ManuelaClone/UCF-PROJECT-03/static/', filename))
+            
+            if not os.path.exists(UPLOAD_FOLDER):
+              os.mkdir(UPLOAD_FOLDER)
+
+            file.save(os.path.join(UPLOAD_FOLDER, filename))
             getPrediction(filename)
             answer, probability_results, filename = getPrediction(filename)
             flash(answer)
